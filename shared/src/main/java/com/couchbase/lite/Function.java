@@ -428,4 +428,20 @@ public final class Function {
     public static Expression upper(Expression expression) {
         return new Expression.FunctionExpresson("UPPER()", Arrays.asList(expression));
     }
+
+    public static Expression millisToString(Expression expression) {
+        return new Expression.FunctionExpresson("MILLIS_TO_STR()", Arrays.asList(expression));
+    }
+
+    public static Expression millisToUTC(Expression expression) {
+        return new Expression.FunctionExpresson("MILLIS_TO_UTC()", Arrays.asList(expression));
+    }
+
+    public static Expression stringToMillis(Expression expression) {
+        return new Expression.FunctionExpresson("STR_TO_MILLIS()", Arrays.asList(expression));
+    }
+
+    public static Expression stringToUTC(Expression expression) {
+        return new Expression.FunctionExpresson("STR_TO_UTC()", Arrays.asList(expression));
+    }
 }
