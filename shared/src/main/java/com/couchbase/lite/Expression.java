@@ -685,7 +685,7 @@ public abstract class Expression {
         }
     }
 
-    static final class FunctionExpresson extends Expression {
+    static final class FunctionExpression extends Expression {
         //---------------------------------------------
         // member variables
         //---------------------------------------------
@@ -695,7 +695,7 @@ public abstract class Expression {
         //---------------------------------------------
         // Constructors
         //---------------------------------------------
-        FunctionExpresson(String func, List<Expression> params) {
+        FunctionExpression(String func, List<Expression> params) {
             this.func = func;
             this.params = params;
         }
